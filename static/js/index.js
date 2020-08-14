@@ -1,1 +1,0 @@
-window.location = "/wiki/sweet_potato_mod/index.html";
