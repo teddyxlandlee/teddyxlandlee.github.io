@@ -2,7 +2,7 @@ h1.title {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 	text-align: center
 }
-div {
+.common {
 	font-family: 'Lucida Console', Monaco, monospace
 }
 a:link {color: #0f0}
