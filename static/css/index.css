@@ -1,0 +1,11 @@
+h1.title {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	text-align: center
+}
+div {
+	font-family: 'Lucida Console', Monaco, monospace
+}
+a:link {color: #0f0}
+a:visited {color: #888}
+a:hover {color: #fff; background-color: #0f0}
+a:active {color: #fff; background-color: #888}
