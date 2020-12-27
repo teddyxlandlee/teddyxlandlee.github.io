@@ -1,7 +1,7 @@
-var myapp = "<h3 class='common bold'>We recommend the latest Java version.</h3><script type='text/html' src='late-ap.html' />";
+var myapp = "<h3 class='common bold'>We recommend the latest Java version.</h3><script type='text/html' src='late-ap.html'></script>";
 var mc = "<div class='common center bold'>Are you using HMCL?</div><li><a class='common center' href='?java=8and10'>Yes</a></li><li><a class='common center' href='?java=8_'>No</a></li>";
 var spm = "<div class='common center bold'>Are you using HMCL?</div><li><a class='common center' href='?java=10'>Yes</a></li><li><a class='common center' href='?java=10_'>No</a></li>";
-var none = "<script type='text/html' src='all-archives.html' />";
+var none = "<script type='text/html' src='all-archives.html'></script>";
 
 function getQueryVariable(variable)
 {
