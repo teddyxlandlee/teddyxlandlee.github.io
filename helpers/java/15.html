@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>Java Archives</title>
+		<link rel='stylesheet' type='text/css' href='/static/css/main.css' />
+		<script type='text/javascript' src='/static/js/javahelper/os.js' />
+	</head><body>
+		<script type='text/html' src='icon-help.html' />
+		<div>
+			<img alt='AdoptOpenJDK' src='/static/pic/javahelper/adoptopenjdk.ico' height='16' width='16' />
+			<img alt='Common Users' src='/static/pic/javahelper/users.png' height='16' width="16" />
+			<span id='pic1'></span>
+			<span id='lnk1' class='common'></span>
+		</div><div>
+			<img alt='AdoptOpenJDK' src='/static/pic/javahelper/adoptopenjdk.ico' height='16' width='16' />
+			<img alt='Common Users' src='/static/pic/javahelper/users.png' height='16' width="16" />
+			<span id='pic2'></span>
+			<span id='lnk2' class='common'></span>
+		</div>
+		<script type='text/javascript'>
+			switch (detectOS()){
+				case 'W':
+					document.getElementById("pic1").innerHTML = windowsImg;
+					document.getElementById("lnk1").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jre_x64_windows_openj9_15.0.1_9_openj9-0.23.0.msi'>AdoptOpenJDK JRE 15.0.1 for Windows</a>";
+					document.getElementById("pic2").innerHTML = windowsImg;
+					document.getElementById("lnk2").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jdk_x64_windows_openj9_15.0.1_9_openj9-0.23.0.msi'>AdoptOpenJDK JDK 15.0.1 for Windows</a>";
+					
+					break;
+				case 'M':
+					document.getElementById("pic1").innerHTML = macImg;
+					document.getElementById("lnk1").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9.2_openj9-0.23.0/OpenJDK15U-jre_x64_mac_openj9_15.0.1_9_openj9-0.23.0.pkg'>AdoptOpenJDK JRE 15.0.1 for OS X</a>";
+					document.getElementById("pic2").innerHTML = macImg;
+					document.getElementById("lnk2").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9.2_openj9-0.23.0/OpenJDK15U-jdk_x64_mac_openj9_15.0.1_9_openj9-0.23.0.pkg'>AdoptOpenJDK JDK 15.0.1 for OS X</a>";
+					
+					break;
+				case 'L':
+					document.getElementById("pic1").innerHTML = linuxImg;
+					document.getElementById("lnk1").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jre_x64_linux_openj9_15.0.1_9_openj9-0.23.0.tar.gz'>AdoptOpenJDK JRE 15.0.1 for Linux</a>";
+					document.getElementById("pic2").innerHTML = linuxImg;
+					document.getElementById("lnk2").innerHTML = "<a href='https://github.com/AdoptOpenJDK/openjdk15-binaries/releases/download/jdk-15.0.1%2B9_openj9-0.23.0/OpenJDK15U-jdk_x64_linux_openj9_15.0.1_9_openj9-0.23.0.tar.gz'>AdoptOpenJDK JDK 15.0.1 for Linux</a>";
+					
+					break;
+				default:
+					window.location = "/helpers/java/invalid-os.html";
+			}
+		</script>
+	</body>
+</html>
